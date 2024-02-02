@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Poppins:ital,wght@0,400;0,500;0,700;1,600&family=Pushster&family=Roboto:ital,wght@1,500&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+/* menu vertical */
+.sidebar{
+    position: fixed;
+    /* height: 640px; */
+    height: 100%;
+    width: 300px;
+    background: #11101d;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    
+}
+.sidebar .logo{
+  font-size: 25px;
+  color: #35b5ff;
+  font-weight: bold;
+  margin: 20px;
+  line-height: 35px;
+}
+.sidebar hr{
+  margin-top: 14px;
+}
+.sidebar a{
+  color: #fff;
+  text-decoration: none;
+}
+.sidebar .menu-content .image-title img{
+  width: 120px;
+  height: 120px;
+  border: 3px solid #35b5ff;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  margin-top: 40px;
+}
+.sidebar .menu-items{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+.sidebar .menu-items .item-active{
+  margin-top: 30px;
+}
+.sidebar .menu-items .item{
+  padding-left: 30px;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: 500;
+  display: block;
+}
+.sidebar .item a:hover{
+  color: #35b5ff;
+  box-shadow: 0 0 10px 3px #222;
+  padding: 0 30px 0 ;
+}
+.sidebar .item a .f-icon{
+  color: #35b5ff;
+margin-right: 5px;
+}
+.sidebar .item a:hover .f-icon{
+  color: #fff;
+}
+.sidebar .icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 100%;
+}
+.sidebar .icons a:hover{
+  color: #35b5ff;
+}
+
+.sidebar .icons .f-icons{
+  position: relative;
+  bottom: -50px;
+  margin-right: 25px;
+}
+
+
+/* home */
+.home .v-header{
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background: #35b5ff;
+}
+
+.home .v-header{
+  display: flex;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.home .v-header .v-login{
+  position: absolute;
+  right: 10px;
+}
+.home .logo{
+  margin-left: 20px;
+  color: #fff;
+}
+.home .image-cover{
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../images/image.jpg);
+  /* background: url(../images/image.jpg); */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  /* opacity: 0.3; */
+}
+
+/* home version2 */
+section .form_container_home{
+  position: absolute;
+  max-width: 640px;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+  z-index: 101;
+  background: transparent;
+  transition: all 0.4s ease-out;
+}
+section .form_container_home h2{
+  color: #fff;
+  font-size: 35px;
+  line-height: 45px;
+}
+section .form_container_home .searchBox{
+  margin-top: 20px;
+}
+section .form_container_home .searchBox .query{
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 17px;
+  border-radius: 30px;
+  padding-left: 45px;
+  padding-right: 60px;
+}
+/* section .form_container_home .searchBox .microphone, */
+section .form_container_home .searchBox .search{
+  position: absolute;
+  top: 43px;
+  transform: translateY(50%);
+  font-size: 20px;
+  left: 0;
+  padding: 12px 20px;
+  display: flex;
+  color: #f44560;
+}
+section .form_container_home .searchBox .microphone{
+  position: absolute;
+  top: 43px;
+  transform: translateY(50%);
+  font-size: 20px;
+  right: 0;
+  padding: 12px 20px;
+  display: flex;
+  color: #f44560;
+}
+
+
+/* login */
+.login{
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background: #35b5ff;
+  z-index: 100;
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+}
+.login .nav{
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+.login .nav,
+.login .nav_item{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.login .nav_logo:hover{
+  /* font-size: 25px; */
+  color: #b45e5e;
+}
+.login .nav_item{
+  column-gap: 25px;
+}
+.login .nav_logo,
+.login .nav_link,
+.login button{
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  /* line-height: 35px; */
+}
+.login .nav_link:hover{
+  color: #b45e5e;
+}
+.login button{
+  padding: 3px 30px;
+  border: 2px solid #fff;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.login button:hover{
+  background: #fff;
+  color: #35b5ff;
+}
+.login button.active{
+  transform: scale(0.98);
+}
+section.home{
+position: relative;
+height: 100vh;
+width: 100%;
+/* background-image: url("../images/image.jpg"); */
+background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../images/image.jpg);
+background-repeat:no-repeat;
+background-position: center;
+background-size: cover;
+
+}
+section.home::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease-out;
+}
+.home.show::before {
+  opacity: 1;
+  pointer-events: auto;
+}
+/* login form */
+section .form_container{
+  position: absolute;
+  max-width: 640px;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+  z-index: 101;
+  background: #fff;
+  padding: 65px 80px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease-out;
+}
+.home_login.show .form_container{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+
+}
+section .form_close{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #0b0217;
+  font-size: 22px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+section .form_container h2{
+  font-size: 25px;
+  color: #0b0217;
+  text-align: center;
+}
+section .input_box{
+  position: relative;
+  margin-top: 15px;
+  width: 100%;
+  height: 35px;
+}
+section .input_box input{
+  height: 100%;
+  width: 100%;
+  border: none;
+  padding: 0 30px;
+  border-bottom: 1.5px solid #aaaaaa;
+  outline: none;
+  color: #333;
+  transition: all 0.2s ease;
+  font-size: 17px;
+}
+section .input_box input:focus{
+  border-color: crimson;
+}
+section .input_box .password,
+section .input_box .email{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  left: 0;
+  color: #35b5ff;
+}
+section .input_box .pw_hide{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #35b5ff;
+  right: 0;
+  cursor: pointer;
+  font-size: 18px;
+  
+}
+section .input_box .on-eye{
+  opacity: 1;
+  pointer-events: auto;
+}
+section .input_box .off-eye{
+  opacity: 0;
+  pointer-events: none;
+}
+
+section .input_box input:focus ~ .email,
+section .input_box input:focus ~ .password{
+  color: crimson;
+}
+section .option_field{
+  display: flex;
+  margin-top: 14px;
+  align-items: center;
+  justify-content: space-between;
+}
+section .form_container a{
+  font-size: 14px;
+  color: #35b5ff;
+}
+section .form_container a:hover{
+  text-decoration: underline;
+}
+section .option_field .checkkbox{
+  display: flex;
+  white-space: nowrap;
+  font-size: 14px;
+  column-gap: 8px;
+}
+section .option_field .checkkbox label{
+  font-size: 14px;
+  cursor: pointer;
+  user-select: none;
+  color: #0b0217;
+}
+.form_container button{
+  background: #35b5ff;
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+}
+.form_container .help_admin{
+  font-size: 14px;
+  text-align: center;
+  margin-top: 15px;
+}
